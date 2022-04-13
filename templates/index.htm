@@ -1,0 +1,12 @@
+{% include 'header.htm' %}
+{% include 'navbar.htm' %}
+{% set active_page = "index" %}
+
+{% block content %}
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">{{ title }} - IRFiles.net</h1>
+        <p class="lead">This is a simple web application that allows you to upload a file in an effort to test data loss prevention controls.</p>
+      </main>
+{% endblock %}
+
+{% include 'footer.htm' %}

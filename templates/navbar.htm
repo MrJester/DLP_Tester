@@ -1,0 +1,15 @@
+<body class="text-center">
+
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand">
+                <img src="static/small-computer.png" width="30" height="30" class="d-inline-block align-top" alt=""> {{ title }}
+            </h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link {% if active=='index' %}active{%endif %}" href="{{ url_for('index') }}">Home</a>
+                <a class="nav-link {% if active=='file_upload' %}active{%endif %}" href="{{ url_for('file_upload') }}">File Upload</a>
+                <a class="nav-link {% if active=='text_submit' %}active{%endif %}" href="{{ url_for('text_submit') }}">Text Submit</a>
+            </nav>
+        </div>
+</header>
